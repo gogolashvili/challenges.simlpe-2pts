@@ -92,7 +92,8 @@ header {
 }
 section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
 }
 h3 {
   font-family: "Poppins";
