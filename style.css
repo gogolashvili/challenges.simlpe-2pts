@@ -45,6 +45,7 @@ header {
   flex-direction: column;
   align-content: center;
   height: 312px;
+  flex-wrap: wrap;
 }
 .div1 {
   background: #ffffff;
@@ -94,6 +95,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 h3 {
   font-family: "Poppins";
@@ -129,4 +131,14 @@ img {
   height: 64px;
   left: 254px;
   top: 154px;
+}
+@media (max-width: 375px) {
+  section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
