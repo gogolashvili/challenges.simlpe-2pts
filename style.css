@@ -1,6 +1,8 @@
 .container {
-  width: 1440px;
-  height: 922px;
+  display: flex;
+  max-width: 1440px;
+  justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
@@ -41,7 +43,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   flex-direction: column;
   align-content: center;
   height: 312px;
@@ -133,12 +134,17 @@ img {
   top: 154px;
 }
 @media (max-width: 375px) {
-  section {
-    flex-direction: column;
-    gap: 20px;
-  }
   header {
-    flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  h1 {
+    justify-content: space-evenly;
+  }
+  h2 {
+    justify-content: space-evenly;
+  }
+  p {
+    justify-content: space-evenly;
   }
 }
